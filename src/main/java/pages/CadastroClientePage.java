@@ -62,6 +62,7 @@ public class CadastroClientePage extends BasePage{
 
     public CadastroClientePage clicaEmEnviar () {
         btnEnviar.click();
+
         return this;
     }
 
@@ -73,6 +74,7 @@ public class CadastroClientePage extends BasePage{
     public String buscarResultadoCadastro(){
         return driver.getPageSource();
     }
+
 
 
 
