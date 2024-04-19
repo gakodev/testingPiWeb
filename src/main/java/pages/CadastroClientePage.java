@@ -30,6 +30,9 @@ public class CadastroClientePage extends BasePage{
     @FindBy(id = "botaoX")
     private WebElement btnX;
 
+    @FindBy(id = "div_header")
+    private WebElement ref;
+
     public CadastroClientePage clicaEmCadastrar (){
         btnCadastro.click();
         return this;
@@ -70,6 +73,12 @@ public class CadastroClientePage extends BasePage{
         btnX.click();
         return this;
     }
+
+    public CadastroClientePage buscaRef (){
+        ref.click();
+        return this;
+    }
+
 
     public String buscarResultadoCadastro(){
         return driver.getPageSource();
